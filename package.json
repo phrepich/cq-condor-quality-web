@@ -1,0 +1,26 @@
+{
+  "name": "cq-condor-quality-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "next": "15.1.6",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/react": "^18.3.18",
+    "eslint": "^9.22.0",
+    "eslint-config-next": "15.1.6",
+    "typescript": "^5.8.2"
+  }
+}
