@@ -1,0 +1,1 @@
+﻿b026980 (HEAD -> chore/estabilizacion-cq, origin/main, origin/HEAD, main) Primera version CQ web

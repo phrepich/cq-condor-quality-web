@@ -1,0 +1,3 @@
+﻿## chore/estabilizacion-cq
+ M tsconfig.tsbuildinfo
+?? docs/

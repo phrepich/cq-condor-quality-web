@@ -1,0 +1,8 @@
+﻿## chore/estabilizacion-cq
+M  .gitignore
+ M next-env.d.ts
+ M package-lock.json
+ M package.json
+D  tsconfig.tsbuildinfo
+?? README.md
+?? docs/

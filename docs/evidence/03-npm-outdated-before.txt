@@ -1,0 +1,11 @@
+﻿Package                Current   Wanted   Latest  Location                           Depended by
+@tailwindcss/postcss     4.2.4    4.3.2    4.3.2  node_modules/@tailwindcss/postcss  cq-condor-quality-web
+@types/node           22.19.17  22.20.1   26.1.1  node_modules/@types/node           cq-condor-quality-web
+@types/react           18.3.28  18.3.31  19.2.17  node_modules/@types/react          cq-condor-quality-web
+eslint                  9.39.4   9.39.4   10.6.0  node_modules/eslint                cq-condor-quality-web
+eslint-config-next      15.1.6   15.1.6  16.2.10  node_modules/eslint-config-next    cq-condor-quality-web
+next                    15.1.6   15.1.6  16.2.10  node_modules/next                  cq-condor-quality-web
+react                   18.3.1   18.3.1   19.2.7  node_modules/react                 cq-condor-quality-web
+react-dom               18.3.1   18.3.1   19.2.7  node_modules/react-dom             cq-condor-quality-web
+tailwindcss              4.2.4    4.3.2    4.3.2  node_modules/tailwindcss           cq-condor-quality-web
+typescript               5.9.3    5.9.3    7.0.2  node_modules/typescript            cq-condor-quality-web
