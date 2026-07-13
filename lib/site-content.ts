@@ -29,11 +29,8 @@ export const company = {
 
 export const navigation = [
   { href: "/#identidad", label: "Identidad" },
-  { href: "/#modelo", label: "Modelo CQ" },
   { href: "/#servicios", label: "Servicios" },
-  { href: "/#capacidades", label: "Capacidades" },
   { href: "/#metodologia", label: "Metodología" },
-  { href: "/#obras-publicas", label: "Obras públicas" },
   { href: "/#contacto", label: "Contacto" },
 ];
 

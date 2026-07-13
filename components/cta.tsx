@@ -22,7 +22,7 @@ export function CTA() {
               <Link href="/#contacto" className="cq-button-secondary">
                 {cta.secondaryLabel}
               </Link>
-              <Link href="/#obras-publicas" className="cq-button-secondary">
+              <Link href="/#servicios" className="cq-button-secondary">
                 {cta.tertiaryLabel}
               </Link>
             </div>
