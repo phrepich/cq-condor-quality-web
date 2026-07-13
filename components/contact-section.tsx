@@ -51,9 +51,6 @@ export function ContactSection() {
               <Link href={whatsappHref} target="_blank" rel="noreferrer" className="cq-button-primary">
                 Agendar reunión
               </Link>
-              <Link href={`mailto:${company.contact.email}`} className="cq-button-secondary">
-                Escribir correo
-              </Link>
             </div>
           </article>
         </aside>

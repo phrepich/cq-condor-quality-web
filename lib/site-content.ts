@@ -9,9 +9,9 @@ export const company = {
   valueProposition:
     "CQ nace para transformar la experiencia en terreno en control objetivo, trazabilidad y respaldo técnico. Integra conocimiento de obra, administración contractual, control de calidad e inspección para que cada decisión quede sustentada con evidencia verificable.",
   contact: {
-    email: "contacto@condorquality.cl",
-    phone: "+56 9 0000 0000",
-    whatsapp: "56900000000",
+    email: "Correo en gestión",
+    phone: "+56 9 7163 6276",
+    whatsapp: "56971636276",
     location:
       "Base operativa en Chile, con foco en obras públicas, contratos MOP, infraestructura hidráulica, sanitaria, vial, civil, minera e industrial.",
   },
