@@ -1,20 +1,16 @@
 import Link from "next/link";
 
+import { CondorMark } from "@/components/condor-mark";
 import { company, navigation } from "@/lib/site-content";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-cq-line/70 bg-white/88 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-cq-line/70 bg-white/90 backdrop-blur-xl">
       <div className="cq-shell py-4">
         <div className="flex items-center justify-between gap-6">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-[18px] bg-cq-obsidian text-sm font-semibold tracking-[0.18em] text-white">
-              CQ
-            </div>
-            <div className="flex flex-col">
-              <span className="text-sm font-semibold uppercase tracking-[0.28em] text-cq-petrol">CQ - Cóndor Quality</span>
-              <span className="text-xs text-cq-steel">{company.tagline}</span>
-            </div>
+          <Link href="/" className="flex min-w-0 items-center gap-4">
+            <CondorMark className="h-auto w-[150px] shrink-0 md:w-[180px]" priority />
+            <span className="hidden max-w-sm text-xs leading-5 text-cq-steel lg:block">{company.tagline}</span>
           </Link>
           <nav className="hidden items-center gap-5 xl:flex">
             {navigation.map((item) => (
@@ -25,7 +21,7 @@ export function Header() {
           </nav>
           <Link
             href="/#contacto"
-            className="inline-flex rounded-full bg-cq-obsidian px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-cq-petrol xl:px-5 xl:py-3"
+            className="inline-flex rounded-md bg-cq-petrol px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-cq-petrol-deep xl:px-5 xl:py-3"
           >
             Solicitar diagnóstico
           </Link>
