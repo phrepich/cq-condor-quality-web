@@ -11,13 +11,12 @@ type StatusState =
 const initialState: StatusState = { type: "idle", message: "" };
 
 const serviceOptions = [
-  "Asesoría técnica a contratos MOP",
-  "Gestión de calidad para obras civiles e hidráulicas",
-  "Planes de Calidad, PICE y procedimientos",
-  "Control documental y trazabilidad de obra",
-  "Preparación de licitaciones públicas o privadas",
-  "Administración contractual y estados de pago",
-  "Auditoría interna y levantamiento de brechas",
+  "Asesoría técnica e inspección de obras",
+  "Gestión de calidad",
+  "Control documental y trazabilidad",
+  "Apoyo contractual y administrativo de obra",
+  "Control técnico en terreno",
+  "Licitaciones y antecedentes",
   "Otro requerimiento técnico",
 ];
 
@@ -138,7 +137,7 @@ export function ContactForm() {
           required
           rows={6}
           className="w-full rounded-[24px] border border-cq-line bg-white px-4 py-3 text-cq-graphite outline-none transition focus:border-cq-copper"
-          placeholder="Describe el contrato, el tipo de obra, el estado actual del proyecto y el apoyo técnico requerido."
+          placeholder="Describe el contrato, tipo de obra, estado actual y apoyo técnico requerido."
         />
       </label>
 

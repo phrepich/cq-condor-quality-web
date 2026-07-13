@@ -76,7 +76,7 @@
   }
 
   .cq-title {
-    @apply text-3xl font-semibold tracking-[-0.05em] text-cq-graphite md:text-5xl;
+    @apply text-3xl font-semibold text-cq-graphite md:text-5xl;
   }
 
   .cq-copy {

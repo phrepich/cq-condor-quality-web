@@ -16,7 +16,7 @@ export function ContactSection() {
             <p className="cq-overline">Contacto</p>
             <h2 className="cq-title max-w-3xl">Coordina una conversación técnica con CQ.</h2>
             <p className="cq-copy max-w-3xl">
-              Si el proyecto necesita orden documental, control de calidad, apoyo contractual o preparación de licitación, podemos revisar el contexto y proponer un primer marco de acción.
+              Si el proyecto necesita control técnico, orden documental, gestión de calidad, apoyo contractual o preparación de licitación, podemos revisar el contexto y proponer un primer marco de acción.
             </p>
           </div>
           <ContactForm />
@@ -43,7 +43,7 @@ export function ContactSection() {
 
           <article className="cq-panel-dark p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.34em] text-white/58">Coordinación comercial</p>
-            <h3 className="mt-4 text-3xl font-semibold tracking-[-0.04em]">Respuesta orientada a obra y contrato</h3>
+            <h3 className="mt-4 text-3xl font-semibold">Respuesta orientada a obra y contrato</h3>
             <p className="mt-4 text-sm leading-7 text-white/72">
               El primer contacto está pensado para filtrar alcance, urgencia y criticidad documental antes de proponer una línea de apoyo.
             </p>

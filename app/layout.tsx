@@ -8,15 +8,15 @@ import { company } from "@/lib/site-content";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cq-condor-quality.vercel.app"),
+  metadataBase: new URL("https://cq-condor-quality-web.vercel.app"),
   title: {
-    default: "CQ - Condor Quality",
-    template: "%s | CQ - Condor Quality",
+    default: "CQ - Cóndor Quality",
+    template: "%s | CQ - Cóndor Quality",
   },
   description: company.heroSubtitle,
   keywords: company.seoKeywords,
   openGraph: {
-    title: "CQ - Condor Quality",
+    title: "CQ - Cóndor Quality",
     description: company.heroSubtitle,
     type: "website",
     locale: "es_CL",

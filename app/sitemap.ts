@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://cq-condor-quality.vercel.app";
+const baseUrl = "https://cq-condor-quality-web.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

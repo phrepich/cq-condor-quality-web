@@ -1,11 +1,13 @@
 import type { MetadataRoute } from "next";
 
+const baseUrl = "https://cq-condor-quality-web.vercel.app";
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://cq-condor-quality.vercel.app/sitemap.xml",
+    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }

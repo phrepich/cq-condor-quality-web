@@ -16,7 +16,7 @@ export function Header() {
               <span className="text-xs text-cq-steel">{company.tagline}</span>
             </div>
           </Link>
-          <nav className="hidden items-center gap-6 xl:flex">
+          <nav className="hidden items-center gap-5 xl:flex">
             {navigation.map((item) => (
               <Link key={item.href} href={item.href} className="text-sm font-medium text-cq-steel hover:text-cq-petrol">
                 {item.label}
@@ -27,7 +27,7 @@ export function Header() {
             href="/#contacto"
             className="inline-flex rounded-full bg-cq-obsidian px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-cq-petrol xl:px-5 xl:py-3"
           >
-            Solicitar diagnóstico técnico
+            Solicitar diagnóstico
           </Link>
         </div>
         <nav className="mt-4 flex gap-5 overflow-x-auto pb-1 xl:hidden">

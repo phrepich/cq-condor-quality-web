@@ -17,7 +17,7 @@ export function Footer() {
             </div>
           </div>
           <p className="max-w-xl text-sm leading-7 text-white/68">
-            Marca de fantasía del ecosistema {company.ecosystem}, orientada a asesoría técnica, inspección, calidad, control documental y soporte contractual para infraestructura.
+            Unidad de asesoría técnica orientada a inspección, calidad, control documental, trazabilidad y soporte contractual para infraestructura.
           </p>
         </div>
 

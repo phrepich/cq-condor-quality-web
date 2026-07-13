@@ -12,7 +12,7 @@ export function CTA() {
           <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl space-y-4">
               <p className="text-xs font-semibold uppercase tracking-[0.34em] text-white/58">Coordinación inicial</p>
-              <h2 className="text-3xl font-semibold tracking-[-0.05em] md:text-5xl">{cta.title}</h2>
+              <h2 className="text-3xl font-semibold md:text-5xl">{cta.title}</h2>
               <p className="max-w-2xl text-base leading-8 text-white/72 md:text-lg">{cta.description}</p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
@@ -22,7 +22,7 @@ export function CTA() {
               <Link href="/#contacto" className="cq-button-secondary">
                 {cta.secondaryLabel}
               </Link>
-              <Link href="/#proyeccion-mop" className="cq-button-secondary">
+              <Link href="/#obras-publicas" className="cq-button-secondary">
                 {cta.tertiaryLabel}
               </Link>
             </div>

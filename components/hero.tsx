@@ -14,8 +14,8 @@ export function Hero() {
           <div className="absolute right-10 top-10 h-40 w-40 rounded-full bg-cq-copper/10 blur-3xl" />
           <div className="relative grid gap-10 px-6 py-14 md:px-10 md:py-18 xl:grid-cols-[1.1fr_0.9fr] xl:px-14">
             <div className="max-w-3xl space-y-7">
-              <p className="text-xs font-semibold uppercase tracking-[0.34em] text-white/62">Asesoría técnica de infraestructura</p>
-              <h1 className="max-w-3xl text-4xl font-semibold tracking-[-0.06em] md:text-6xl">{company.heroTitle}</h1>
+              <p className="text-xs font-semibold uppercase tracking-[0.34em] text-white/62">Unidad de Asesoría Técnica</p>
+              <h1 className="max-w-3xl text-4xl font-semibold md:text-6xl">{company.heroTitle}</h1>
               <p className="max-w-2xl text-base leading-8 text-white/74 md:text-xl">{company.heroSubtitle}</p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/#contacto" className="cq-button-primary">
@@ -39,7 +39,8 @@ export function Hero() {
                     <p className="text-3xl font-semibold tracking-[0.14em]">CQ</p>
                     <p className="text-sm uppercase tracking-[0.26em] text-white/76">Cóndor Quality</p>
                     <p className="text-sm leading-7 text-white/68">
-                      Unidad especializada en inspección, gestión de calidad, control documental y soporte contractual para obras públicas y privadas.
+                      Unidad especializada en asesoría técnica, inspección de obras, control de calidad,
+                      gestión documental y soporte contractual.
                     </p>
                   </div>
                 </div>

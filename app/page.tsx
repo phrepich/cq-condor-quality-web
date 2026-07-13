@@ -9,15 +9,21 @@ import { MethodologySection } from "@/components/methodology-section";
 import { SectionHeading } from "@/components/section-heading";
 import { ServicesGrid } from "@/components/services-grid";
 import {
+  capabilities,
+  capabilityHighlights,
   company,
   documentationPillars,
-  leadershipHighlights,
-  mopProjection,
+  growthLines,
+  identity,
+  operatingModel,
+  publicWorksFlow,
+  publicWorksLines,
   sectors,
+  valuePillars,
 } from "@/lib/site-content";
 
 export const metadata: Metadata = {
-  title: "Asesoria tecnica, calidad e inspeccion para infraestructura",
+  title: "Asesoría técnica, control de calidad y soporte para infraestructura",
   description: company.heroSubtitle,
 };
 
@@ -26,34 +32,77 @@ export default function HomePage() {
     <main>
       <Hero />
 
-      <section id="quienes-somos" className="cq-section">
+      <section id="identidad" className="cq-section">
+        <div className="cq-shell space-y-10">
+          <SectionHeading
+            eyebrow="Identidad y propósito"
+            title="Una unidad técnica para aportar control, orden documental y criterio de obra."
+            description="CQ forma parte del ecosistema Cóndor y se especializa en asesoría técnica, inspección, gestión de calidad, trazabilidad documental y soporte contractual para infraestructura."
+          />
+          <div className="grid gap-5 lg:grid-cols-3">
+            {identity.map((item) => (
+              <article key={item.title} className="cq-panel h-full p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cq-copper">{item.title}</p>
+                <p className="mt-5 text-sm leading-7 text-cq-steel">{item.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="modelo" className="cq-section pt-0">
         <div className="cq-shell">
-          <div className="cq-panel grid gap-8 px-8 py-10 md:px-10 lg:grid-cols-[0.78fr_1.22fr]">
-            <div className="space-y-4">
-              <p className="cq-overline">Quiénes somos</p>
-              <h2 className="cq-title max-w-xl">
-                Una unidad técnica creada para ordenar, respaldar y profesionalizar la gestión de obra.
-              </h2>
-            </div>
-            <div className="space-y-6">
-              <p className="cq-copy max-w-3xl">{company.valueProposition}</p>
-              <div className="grid gap-4 md:grid-cols-2">
-                <article className="rounded-[24px] border border-cq-line bg-cq-paper px-5 py-5">
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cq-petrol">Ecosistema</p>
-                  <p className="mt-3 text-lg font-semibold text-cq-graphite">{company.ecosystem}</p>
-                  <p className="mt-2 text-sm leading-7 text-cq-steel">
-                    CQ opera como marca técnica orientada a asesoría, inspección y calidad para infraestructura pública y privada.
+          <div className="cq-panel overflow-hidden">
+            <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
+              <div className="cq-gridline relative overflow-hidden bg-[linear-gradient(135deg,#0f1318_0%,#123c45_72%,#194955_100%)] px-8 py-10 text-white md:px-10">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(183,138,87,0.18),transparent_30%)]" />
+                <div className="relative space-y-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.34em] text-white/60">Modelo operativo CQ</p>
+                  <h2 className="text-3xl font-semibold md:text-4xl">
+                    Respaldo empresarial, especialización técnica y control trazable en una misma estructura.
+                  </h2>
+                  <p className="text-base leading-8 text-white/72">
+                    El modelo combina formalidad corporativa, experiencia técnica y capacidad de ejecución para entregar apoyo especializado, flexible y orientado a resultados.
                   </p>
-                </article>
-                <article className="rounded-[24px] border border-cq-line bg-cq-paper px-5 py-5">
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cq-petrol">Proyección</p>
-                  <p className="mt-3 text-lg font-semibold text-cq-graphite">{company.futureUnit}</p>
-                  <p className="mt-2 text-sm leading-7 text-cq-steel">
-                    Futura unidad independiente del ecosistema Cóndor, enfocada en topografía, drones y control geométrico.
-                  </p>
-                </article>
+                </div>
+              </div>
+              <div className="px-8 py-10 md:px-10">
+                <div className="grid gap-4">
+                  {operatingModel.map((item, index) => (
+                    <article key={item.title} className="rounded-[24px] border border-cq-line bg-cq-paper px-5 py-5">
+                      <div className="flex items-start gap-4">
+                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-cq-obsidian text-sm font-semibold text-white">
+                          {index + 1}
+                        </span>
+                        <div>
+                          <h3 className="text-lg font-semibold text-cq-graphite">{item.title}</h3>
+                          <p className="mt-2 text-sm leading-7 text-cq-steel">{item.description}</p>
+                        </div>
+                      </div>
+                    </article>
+                  ))}
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="propuesta" className="cq-section pt-0">
+        <div className="cq-shell space-y-10">
+          <SectionHeading
+            eyebrow="Propuesta de valor"
+            title="Control técnico que convierte experiencia de obra en decisiones verificables."
+            description={company.valueProposition}
+          />
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+            {valuePillars.map((pillar, index) => (
+              <article key={pillar.title} className="cq-panel h-full p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cq-copper">0{index + 1}</p>
+                <h3 className="mt-4 text-xl font-semibold text-cq-graphite">{pillar.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-cq-steel">{pillar.description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -62,25 +111,37 @@ export default function HomePage() {
 
       <ExperienceSection />
 
-      <MethodologySection />
-
-      <section id="proyeccion-mop" className="cq-section">
+      <section id="capacidades" className="cq-section pt-0">
         <div className="cq-shell space-y-10">
           <SectionHeading
-            eyebrow="Registro y proyección MOP"
-            title="Una estructura técnica preparada para competir con estándar de asesoría pública."
-            description="CQ orienta su posicionamiento inicial hacia contratos MOP y DOH, con foco en orden documental, trazabilidad, lectura contractual y capacidad real de acompañamiento técnico."
+            eyebrow="Experiencia y capacidades"
+            title="Capacidad operativa, documental y técnica aplicada a administración contractual."
+            description="CQ se construye sobre experiencia profesional acumulada en obras de infraestructura, especialmente en contextos donde el orden documental y el control de calidad sostienen el avance contractual."
           />
-          <div className="grid gap-5 lg:grid-cols-4">
-            {mopProjection.map((item, index) => (
-              <article key={item} className="cq-panel h-full p-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cq-copper">0{index + 1}</p>
-                <p className="mt-5 text-sm leading-7 text-cq-steel">{item}</p>
-              </article>
-            ))}
+          <div className="grid gap-5 lg:grid-cols-[0.82fr_1.18fr]">
+            <div className="grid gap-5">
+              {capabilities.map((capability) => (
+                <article key={capability.title} className="cq-panel p-6">
+                  <h3 className="text-xl font-semibold text-cq-graphite">{capability.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-cq-steel">{capability.description}</p>
+                </article>
+              ))}
+            </div>
+            <div className="cq-panel p-6 md:p-8">
+              <p className="cq-overline">Capacidades destacadas</p>
+              <div className="mt-6 grid gap-3 md:grid-cols-2">
+                {capabilityHighlights.map((item) => (
+                  <div key={item} className="rounded-[18px] border border-cq-line bg-cq-paper px-4 py-3">
+                    <p className="text-sm leading-7 text-cq-steel">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <MethodologySection />
 
       <section id="documentacion" className="cq-section pt-0">
         <div className="cq-shell">
@@ -90,13 +151,13 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(183,138,87,0.18),transparent_28%)]" />
                 <div className="relative space-y-5">
                   <p className="text-xs font-semibold uppercase tracking-[0.34em] text-white/60">
-                    Documentación y control de calidad
+                    Cumplimiento normativo y trazabilidad
                   </p>
-                  <h2 className="text-3xl font-semibold tracking-[-0.05em] md:text-4xl">
-                    La calidad no se declara. Se sostiene con documentos, flujos y evidencia verificable.
+                  <h2 className="text-3xl font-semibold md:text-4xl">
+                    La obra se controla donde ocurre: en terreno, en documentos y en decisiones.
                   </h2>
                   <p className="text-base leading-8 text-white/72">
-                    Planes, procedimientos, instructivos y registros diseñados para responder a la exigencia real de la obra y del contrato.
+                    CQ ordena información crítica para responder a observaciones, auditorías, inspecciones y cierres contractuales con evidencia disponible.
                   </p>
                 </div>
               </div>
@@ -114,40 +175,51 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="liderazgo" className="cq-section pt-0">
-        <div className="cq-shell">
-          <div className="cq-panel grid gap-8 px-8 py-10 md:px-10 lg:grid-cols-[0.76fr_1.24fr]">
-            <div className="relative overflow-hidden rounded-[28px] bg-[linear-gradient(150deg,#12171d_0%,#153c45_70%,#225261_100%)] p-7 text-white">
-              <div className="cq-gridline absolute inset-0 opacity-60" />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(183,138,87,0.18),transparent_30%)]" />
-              <div className="relative space-y-10">
-                <div className="inline-flex rounded-full border border-white/12 bg-white/8 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/74">
-                  Liderazgo técnico
-                </div>
-                <div className="space-y-3">
-                  <p className="text-3xl font-semibold tracking-[-0.04em]">Pablo Hrepich</p>
-                  <p className="text-base leading-8 text-white/72">
-                    Ingeniero Constructor, Topógrafo, gestor de proyectos y líder técnico de CQ.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-6">
-              <div className="space-y-4">
-                <p className="cq-overline">Perfil institucional</p>
-                <h2 className="cq-title max-w-3xl">Experiencia aplicada a calidad, documentación técnica y control contractual.</h2>
-                <p className="cq-copy max-w-3xl">
-                  La dirección técnica de CQ se presenta con un enfoque institucional y sobrio. Su liderazgo combina experiencia en obras hidráulicas, gestión de calidad, documentación técnica, control de obra, coordinación con Inspección Fiscal y administración contractual.
-                </p>
-              </div>
-              <div className="grid gap-4">
-                {leadershipHighlights.map((item) => (
-                  <article key={item} className="rounded-[24px] border border-cq-line bg-cq-paper px-5 py-5">
+      <section id="obras-publicas" className="cq-section pt-0">
+        <div className="cq-shell space-y-10">
+          <SectionHeading
+            eyebrow="Enfoque institucional para obras públicas"
+            title="Estructura técnica preparada para contratos con alta exigencia de control y trazabilidad."
+            description="CQ orienta su desarrollo hacia servicios técnicos especializados en asesoría, inspección, control de calidad y soporte documental para contratos de infraestructura pública, integrando experiencia en terreno con gestión verificable."
+          />
+          <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="cq-panel p-6 md:p-8">
+              <p className="cq-overline">Líneas de desarrollo</p>
+              <div className="mt-6 grid gap-3 md:grid-cols-2">
+                {publicWorksLines.map((item) => (
+                  <div key={item} className="rounded-[18px] border border-cq-line bg-cq-paper px-4 py-3">
                     <p className="text-sm leading-7 text-cq-steel">{item}</p>
-                  </article>
+                  </div>
                 ))}
               </div>
             </div>
+            <div className="grid gap-4">
+              {publicWorksFlow.map((item) => (
+                <article key={item.title} className="cq-panel p-5">
+                  <h3 className="text-lg font-semibold text-cq-graphite">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-7 text-cq-steel">{item.description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="crecimiento" className="cq-section pt-0">
+        <div className="cq-shell space-y-10">
+          <SectionHeading
+            eyebrow="Proyección de crecimiento"
+            title="Tres líneas para consolidar valor técnico en infraestructura."
+            description="CQ se proyecta como una unidad técnica capaz de crecer en líneas estratégicas que fortalecen su propuesta de valor y su posición en el mercado."
+          />
+          <div className="grid gap-5 lg:grid-cols-3">
+            {growthLines.map((line, index) => (
+              <article key={line.title} className="cq-panel h-full p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cq-copper">Línea {index + 1}</p>
+                <h3 className="mt-4 text-2xl font-semibold text-cq-graphite">{line.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-cq-steel">{line.description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -156,13 +228,13 @@ export default function HomePage() {
         <div className="cq-shell space-y-10">
           <SectionHeading
             eyebrow="Clientes y sectores atendidos"
-            title="Una consultora técnica diseñada para interactuar con terreno, mandantes y equipos de obra."
-            description="CQ puede integrarse a constructoras, organismos públicos, mandantes privados y oficinas técnicas que necesitan más orden, respaldo y criterio operativo."
+            title="Una unidad técnica diseñada para interactuar con terreno, mandantes y equipos de obra."
+            description="CQ puede integrarse a constructoras, organismos públicos, mandantes privados, inspecciones y oficinas técnicas que necesitan más orden, respaldo y criterio operativo."
           />
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {sectors.map((sector) => (
               <article key={sector.title} className="cq-panel h-full p-6">
-                <h3 className="text-xl font-semibold tracking-[-0.03em] text-cq-graphite">{sector.title}</h3>
+                <h3 className="text-xl font-semibold text-cq-graphite">{sector.title}</h3>
                 <p className="mt-4 text-sm leading-7 text-cq-steel">{sector.description}</p>
               </article>
             ))}
@@ -180,8 +252,8 @@ export default function HomePage() {
           <Link href="/#contacto" className="cq-button-ghost">
             Agendar reunión
           </Link>
-          <Link href="/#proyeccion-mop" className="cq-button-ghost">
-            Preparar licitación con CQ
+          <Link href="/#obras-publicas" className="cq-button-ghost">
+            Ver enfoque institucional
           </Link>
         </div>
       </section>
